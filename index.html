@@ -1,0 +1,152 @@
+<!DOCTYPE html> 
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Botanica Hills</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .banner {
+      background-color: #27ae60;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    }
+
+    .banner h1 {
+      margin: 10px 0;
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+
+    .banner img {
+      max-width: 120px;
+      height: auto;
+      display: block;
+      margin: 0 auto 10px auto;
+    }
+
+    /* Галерея */
+    .photos-top {
+      display: flex;
+      flex-direction: column; /* сверху вниз */
+      margin: 0;
+      padding: 0;
+    }
+
+    .photo {
+      position: relative;
+      width: 100%;
+      margin: 0;
+    }
+
+    .photo img {
+      width: 100%;
+      height: auto;
+      display: block;
+      margin: 0;
+      padding: 0;
+    }
+
+    .photo::after {
+      content: attr(data-label);
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 6px 12px;
+      border-radius: 5px;
+      font-weight: bold;
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    h2 {
+      color: #27ae60;
+      margin-top: 20px;
+    }
+
+    p {
+      margin: 10px 0;
+    }
+
+    ul, ol {
+      margin: 10px 0 20px 20px;
+    }
+
+    .btn {
+      display: block;
+      width: fit-content;
+      margin: 30px auto 10px auto;
+      background: #27ae60;
+      color: white;
+      font-size: 1.2rem;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 15px 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      transition: background 0.3s ease;
+    }
+
+    .btn:hover {
+      background: #219150;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="banner">
+    <img src="photo2.jpg" alt="Логотип">
+    <h1>Ботаника Хилс</h1>
+  </div>
+
+  <div class="photos-top">
+    <!-- "До" первым -->
+    <div class="photo" data-label="До">
+      <img src="photo1.jpg" alt="Фото До">
+    </div>
+    <!-- "Після" сразу под ним -->
+    <div class="photo" data-label="Після">
+      <img src="imgonline-com-ua-Resize-vJJmdphF3hQe9N.jpg" alt="Фото Після">
+    </div>
+  </div>
+
+  <div class="container">
+    <h2>Що зміниться, якщо поруч з нашими будинками зʼявиться парк?</h2>
+    <ol>
+      <li>1. Наши діти будуть гуляти по безпечній охайній, впорядкованій території, оскільки місце, що приваблює осіб з нарко-і алко- залежністю зникне.</li>
+      <li>2. Через цю небезпечну територію пролягає пішохідний маршрут до метро Контрактова площа для жителів нашого масиву Татарка. Користуватись цією дорогою можливо лише в денний час, оскільки в вечірні години місце це безлюдне і небезпечне. Поява парку усуне криміногенну ділянку на маршруті. </li>
+      <li>3. Мешканці пʼятиста  квартир зможуть насолоджувались красотою природи, яка знаходиться прямо під їх будинком.</li>
+    </ol>
+
+    <h2>Яка мета цього сайту?</h2>
+    <p>Ми хочемо дізнатись в мешканців будинку #9 та # 1/7 чи ця проблема з занедбаною територією поруч з нашим домом є для вас актуальною?</p>
+
+    <h2>Хто є відповідальним за проект?</h2>
+    <p>Поки що цей проект  - наша мрія. Ми Ваші сусіди, тому сподіваємось що ця наша мрія відгукнеться і в Ваших серцях. Ми мріємо і діємо. За попереднім прорахунком вартість бруківки, піску та цементу, лавочок та урн складе 300 000 грн. Саме цю суму ми готові вкласти в проект парку, якщо Ви підтримаєте парк. парку потрібна підтримка хочаб 50% мешканців наших двох будинків, тому тисни цю кнопку, якщо хочеш підтримати проект.</p>
+
+    <!-- Кнопка со ссылкой на Telegram-бота -->
+    <a href="https://t.me/BotanicaHillsOfficialBot" target="_blank" class="btn">Проголосувати в Telegram-боті</a>
+  </div>
+
+</body>
+</html>
